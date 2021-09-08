@@ -5,28 +5,24 @@ class Cards extends Component {
     state = { 
         users: [
             {
-              name: "Leanne Graham",
-              comment: "",
-              about: "Multi-layered client-server neural-net",
-              avatar: "",
+              name: "David James",
+              comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             },
             {
-              name: "Ervin Howell",
-              comment: "",
-              about: "Proactive didactic contingency",
-              avatar: "",
+              name: "James Junior",
+              comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             },
             {
-              name: "Clementine Bauch",
-              comment: "",
-              about: "Face to face bifurcated interface",
-              avatar: "",
+              name: "Jessy Jane",
+              comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             },
             {
-              name: "Patricia Lebsack",
-              comment: "",
-              about: "Multi-tiered zero tolerance productivity",
-              avatar: "",
+              name: "William Davids",
+              comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            },
+            {
+              name: "Johnson White",
+              comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             },
           ]
      };
