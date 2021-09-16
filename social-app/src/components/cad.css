@@ -1,0 +1,29 @@
+.avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.headDate{
+    justify-content: space-between;
+    width:100%;    
+}
+
+.sideCon{
+    margin: 1em 0;
+    width:90%;
+}
+
+.cardInner{
+    width: 590px;
+    height: 120px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 10px;
+}

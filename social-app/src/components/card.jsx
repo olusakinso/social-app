@@ -1,38 +1,36 @@
 import React from 'react'
 import henry from "./henry.jpg"
+import "./cad.css"
 
-const cardInner = {
-    width: "590px",
-    height: "120px", 
-    borderStyle: "outset",
-    borderWidth: "5px",
-    padding: "5px",           
-}
-const avatar = {
-    verticalAlign: "middle",
-    width: "50px",
-    height: "50px",
-    borderRadius: "50%",
-    float: "left"
+const date = {
+    fontSize: "10px",
+    fontWeight: "100px",
+    justifyContent: "space-between",
+    width:"20%",
+    marginRight: "10px"
 }
 const name = {
-    marginLeft: "60px",
-    fontSize: "15px",
-    position: "relative",           
+    fontSize: "13px",
+    fontWeight: "900",    
 }
 const comment = {
     fontSize: "13px",
+    width: "90%",
     position: "relative",
     textAlign: "left",
-    marginLeft: "60px"
  }
 
 export const Card = ({user}) => {
     return (
-        <div style={cardInner}>
-            <img src={henry} alt="" style= {avatar} />
-            <h1 style={name}>{user.name}</h1>
-            <p style={comment}>{user.comment}</p>
+        <div className="d-flex cardInner">
+            <img src={henry} alt="" className="avatar"/>
+            <div className="sideCon">
+            <div className="d-flex headDate">
+                    <div style = {name}> {user.name}</div>
+                    <div style = {date}> {user.date}</div>
+                </div>
+                <p style={comment}>{user.comment}</p>
             </div>
+        </div>
     )
 }
