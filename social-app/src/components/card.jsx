@@ -1,7 +1,7 @@
 import React from 'react'
+
 import henry from "./henry.jpg"
 import { library } from '@fortawesome/fontawesome-svg-core'
-
 import { faHeart, faReply} from '@fortawesome/free-solid-svg-icons'
 import "./cad.css"
 import { dom } from '@fortawesome/fontawesome-svg-core'
@@ -11,6 +11,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 dom.watch()
 library.add(faHeart, faReply)
 
+function count() {
+    console.log('Button Clicked')
+    
+}
 
 const date = {
     fontSize: "10px",
@@ -46,16 +50,16 @@ export const Card = ({user}) => {
                 <p style={comment}>{user.comment}</p>
                 
                 <div className = "icons">
-                <i id = "btn" className= "heart">                
+                <i id = "btn" className= "heart" onClick={count}>                
                     <span id= "display"
-                    style = {{fontSize:'20px', position: 'absolute', marginLeft: '30px', marginTop: '-2px'} 
+                    style = {{fontSize:'18px', position: 'absolute', marginLeft: '30px', marginTop: '-2px'} 
                     }>0
                     </span>
                     <FontAwesomeIcon icon={faHeart}/>
                     </i>
                 <i id = "btn" className= "reply">
                 <span id= "display" 
-                    style = {{fontSize:'20px', position: 'absolute', marginLeft: '-20px', marginTop: '-2px'} 
+                    style = {{fontSize:'18px', position: 'absolute', marginLeft: '-30px', marginTop: '-2px'} 
                     }>0
                     </span><FontAwesomeIcon icon={faReply}/></i>
                 </div>                
@@ -63,3 +67,4 @@ export const Card = ({user}) => {
             </div>                        
     )
 }
+
