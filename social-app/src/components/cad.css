@@ -69,7 +69,7 @@ i#btn.reply:hover{
     cursor: pointer;
 }
 
-i#btn.heart:active{
+i#btn.heart.active{
     background-color: #f50057;
     box-shadow: 0 5px #666;
     transform: translateY(4px) ;

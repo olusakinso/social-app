@@ -11,10 +11,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 dom.watch()
 library.add(faHeart, faReply)
 
-function count() {
-    console.log('Button Clicked')
+// function count() {
+//     console.log('Button Clicked')
     
-}
+// }
 
 const date = {
     fontSize: "10px",
@@ -37,7 +37,7 @@ const comment = {
     textAlign: "left",
  } 
 
-export const Card = ({user}) => {
+export const Card = ({user,increaseCount}) => {
     return (
         
         <div className="d-flex cardInner">
@@ -50,17 +50,17 @@ export const Card = ({user}) => {
                 <p style={comment}>{user.comment}</p>
                 
                 <div className = "icons">
-                <i id = "btn" className= "heart" onClick={count}>                
+                <i id = "btn" className= {"heart"} >                
                     <span id= "display"
                     style = {{fontSize:'18px', position: 'absolute', marginLeft: '30px', marginTop: '-2px'} 
                     }>0
                     </span>
                     <FontAwesomeIcon icon={faHeart}/>
                     </i>
-                <i id = "btn" className= "reply">
+                <i id = "btn" className= "reply" onClick={()=>increaseCount(user.id)}>
                 <span id= "display" 
                     style = {{fontSize:'18px', position: 'absolute', marginLeft: '-30px', marginTop: '-2px'} 
-                    }>0
+                    }>{user.count}
                     </span><FontAwesomeIcon icon={faReply}/></i>
                 </div>                
             </div>
